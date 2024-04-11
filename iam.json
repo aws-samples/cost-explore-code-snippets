@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "athena:List*",
+                "athena:*QueryExecution",
+                "athena:Get*",
+                "athena:BatchGet*",
+                "glue:Get*",
+                "glue:BatchGet*",
+                "s3:Get*",
+                "s3:List*",
+                "SES:SendRawEmail",
+                "SES:SendEmail",
+                "logs:CreateLogStream",
+                "logs:CreateLogGroup",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
