@@ -13,7 +13,7 @@ Resources:
     Type: AWS::Events::Rule
     Properties:
       Description: Lambda Data trigger
-      Name: LambdaCloudWatchTrigger
+      Name: LambdaCloudWatchTriggerCE
       ScheduleExpression: "cron(0 10 * * ? *)"  
       State: ENABLED
       Targets:
@@ -62,7 +62,7 @@ Resources:
   Lambda:
     Type: AWS::Lambda::Function
     Properties:
-      FunctionName: CE-Report-Lmabda
+      FunctionName: CE-Report-Lambda
       Description: LambdaFunction of python3.10
       Runtime: python3.10
       Code:
